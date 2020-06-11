@@ -11,3 +11,10 @@ const translateToEnglish = () => {
     $(".spanish").css("display", "block")
   }
   
+
+/* flip card about page */
+jQuery(document).ready(function($){
+  $( ".card .flipButton" ).click(function() {
+    $( this ).closest(".card").toggleClass( "flip" );
+  });
+});
