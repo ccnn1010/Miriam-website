@@ -65,6 +65,38 @@ body p{
     color: #00B7CC;
 }
 
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+
+/* navbar translate  */
+
+ .languageTranslate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(160, 160, 165);
+  border-radius: 5px;
+  border: 1px solid rgb(160, 160, 165);
+/*  border: none; */
+} 
+
+.navbar-nav .dropdown-menu {
+  border: none;
+}
+
+.navbar .dropdown.show a :hover{ 
+  background-color: #00B7CC;
+  color: white;
+  border: none;
+}
+
+.dropdown-item{
+  display: flex;
+  justify-content: center;
+}
 
 /* For responsivity of hamburger menu .row is needed  */
 .row {
@@ -419,6 +451,13 @@ a:hover{
             letter-spacing: 2px;
             line-height: 3rem;
         }
+        .dropdown-item{
+          display: flex;
+          justify-content: start;
+        }
+        .languageTranslate{
+         border: none;
+        } 
 
     }
 
@@ -826,8 +865,11 @@ form .form-control:-ms-input-placeholder {
 }
 
 form .form-control:placeholder {
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+
 }
 
 
-}
+
+
