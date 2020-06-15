@@ -179,7 +179,11 @@ body p{
     display: block;
   } */
 
-  
+  .overlay h1 { 
+    color:#fff;
+    font-family: 'Caveat', cursive;
+   font-size: 5rem; 
+  } 
   
 /*-- Footer --*/
 
@@ -316,6 +320,7 @@ a:hover{
       #home{
         height: 105vh;
     }
+    
 }
 
 
@@ -327,7 +332,7 @@ a:hover{
 
 .landing-box-1 h1 {
      text-align: center; 
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     margin-top: 60px;
     color: white;
     font-weight: bold;
@@ -335,15 +340,12 @@ a:hover{
 
 
 .landing-box-1 p {
-    align-items: center; 
-  text-align: center; 
-    font-size: 1.3rem;
-    color: white;
-    letter-spacing: 2px;
-/*     line-height: 2rem; */
-/*     padding-top: 5%; */
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 30px;
 }
-
 
 /* Discover more scroll to next section */
 
@@ -419,7 +421,7 @@ a:hover{
 @media (max-width: 360px) { 
     .landing-box-1 h1 {
         margin-top: 100px;
-        font-size: 2rem;
+        font-size: 1.8rem;
        } 
        
        .landing-box-1 p {
@@ -451,6 +453,7 @@ a:hover{
             letter-spacing: 2px;
             line-height: 3rem;
         }
+        
         .dropdown-item{
           display: flex;
           justify-content: start;
@@ -596,17 +599,27 @@ a:hover{
 
 
 
+ /*  style="width: 15rem; height: 28rem; */
+
+
+
+
+
+
+
   
-  .card {
+  .card-blog {
     display: block; 
       margin-bottom: 20px;
       line-height: 1.7;
       background-color: #fff;
       border-radius: 2px;
       box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
-      transition: box-shadow .25s; 
+      transition: box-shadow .25s;
+      width: 15rem;
+      height: 28rem; 
   }
-  .card:hover {
+  .card-blog:hover {
     box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   }
   .img-card {
@@ -722,6 +735,29 @@ form .form-control:placeholder {
 }
 
 
+
+.btn2{
+  background-color:#00B7CC;
+/*   border-color: white; */
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+}
+
+
+.btn:hover {
+  color:white;
+  box-shadow: inset 0 -3em 0 rgba(240, 134, 170, 1) ;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
 #contact-us{
  background: linear-gradient(to right, rgb(0, 183, 204, .50), rgb(92, 196, 183, 0.67)), url('https://s7.gifyu.com/images/ocean-wave-cropbeb8fcb1554c7b6c.md.jpg');
   display: flex;
@@ -819,6 +855,7 @@ form .form-control::-webkit-input-placeholder {
   font-size: 0.8rem;
   font-family: 'Work Sans', sans-serif;
 }
+
 }
 
 
@@ -875,76 +912,81 @@ form .form-control:placeholder {
  /*  background-color: white; */
   display: flex;
   justify-content: center;
- align-items: center; 
+/*  align-items: center;  */
   width: 100%;
   min-height: 100%;
+  margin-bottom: 30px;
 /*   box-sizing: border-box; */
 /*   margin-bottom: 10px; */
 }
 
 
 #whatWeDo h1 {
-  /* text-align: start; */
-  margin-top: 47px;
+  margin-top: 20px;
   margin-bottom: 20px;
   font-weight: bold;
   color: #F086AA;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
+
 
 #whatWeDo p {
   font-family: 'Work Sans', sans-serif;
-  color: #5A6060; 
-  text-align: start;
-  font-size: 1.4rem;
-  line-height: 1.8;
+  color: #5A6060;
+  text-align: center; 
+  font-size: 1.2rem;
+  line-height: 1.6;
   margin-bottom: 20px;
-  margin-top: 40px;
-/*   padding-left: 15%;
-  padding-right: 15%; */
+  margin-top: 15px;
 }
 
-.about-image{ 
-  display: flex;
+/* .about-image{
+  display:flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-} 
-
+  padding:2%;
+} */
 
 .about-image img{
   align-items: center;
+  margin-top: 20px;
+/*   margin-bottom: 50px; */
+  transition: transform 2s, 1s ease-in-out;
+  box-shadow: 5px 5px 25px rgba(255, 212, 220, 0.651);
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* .about-image{ 
+
+  display: table-cell;
+  vertical-align: middle;
+
+  margin-top: 15px;
+} 
+ */
+
+/* .about-image img{
+
+ align-items: center; 
   transition: transform 2s, 1s ease-in-out;
   cursor: pointer;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 250px;
+  max-height: 180px;
 }  
+ */
 
 
 
 
-#cardFlip{
+.cardFlip{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100%;
   width: 100%;
-/*   border: 1px solid blue; */
-}
-
-#cardFlip2{
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  width: 100%;
-  height: 100vh;
-}
-
-.cardFlip3{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
+/*   border: 1px solid blue;  */
 }
 
 
@@ -960,8 +1002,12 @@ form .form-control:placeholder {
 h1 {
   margin-top:0;
 }
-h2 {
+.back h2 {
   text-transform:uppercase;
+}
+
+.back p{
+  font-size: 1rem;
 }
 .card {
 	position: relative;
@@ -1047,6 +1093,37 @@ background: white;
 }
 
 
+
+
+
+
+/* iphone 5 media query  */
+
+@media (max-width: 360px) { 
+  #whatWeDo h1 {
+ /*    margin-top: 20px; */
+    font-size: 1.5rem;
+}
+#whatWeDo p {
+  font-family: 'Work Sans', sans-serif;
+  color: #5A6060;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.card {
+  height: 250px;
+}
+.back h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+}
+
+
+
 @media (min-width:770px) and (max-height: 1366px)   {
   .card {
     position: relative;
@@ -1062,5 +1139,71 @@ background: white;
     margin: 0.8%;
     margin-bottom: 18px;
   }
+  #whatWeDo h1 {
+    /* text-align: start; */
+    margin-top: 150px; 
+    margin-bottom: 100px;
+    font-weight: bold;
+    color: #F086AA;
+    font-size: 2.8rem;
+}
+  #whatWeDo p {
+    font-family: 'Work Sans', sans-serif;
+    color: #5A6060;
+    align-items: center;
+    text-align: center; 
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding-right: 15%;
+    padding-left: 15%;
+   /*  padding-left: 20%; */
+}
+.about-image img {
+  max-width: 500px;
+  max-height: 400px;
+  margin-top: 100px;
+  margin-bottom: 0;
+} 
  
- }
+}
+
+
+
+/* video */
+
+ .videoLapajita{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  border-style: none;
+  height: 210px;
+  width: 320px;
+}
+
+@media (min-width:770px) and (max-height: 1883px)  {
+  video{
+      border-style: none;
+      height: 450px;
+      width: 770px;
+     /*  width="320" height="240" */
+  }
+
+.center img{
+  height: 55px;
+  width: 35px;
+}
+  
+
+}
+
+@media (max-width: 360px) {
+  video {
+      height: 180px;
+      width: 240px;
+  }
+}
